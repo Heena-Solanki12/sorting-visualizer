@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sorting Visualizer</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    </head>
+<body>
+    <nav>
+        <label class="logo">Sorting Visualizer</label></label>
+        <ul>
+            <label for="speed">Speed : </label>
+            <input class="set-speed" type="range" name="speed" id="speed" step="1" max="3" min="1">
+            <label for="arraysize">Size : </label>
+            <input type="range" name="arraysize" id="arraysize" step="1" max="60" min="15">
+            <li><button onClick="bubbleSort()" id="bub">Bubble Sort</button></li>
+            <li><button onClick="SelectionSort()" id="sel">Selection Sort</button></li>
+            <li><button onClick="insertionSort()" id="ins">Insertion Sort</button></li>
+            <li><button onClick="mergeSort(array,0,array.length-1)" id="marg">Merge Sort</button></li>
+            <li><button onClick="radixsort(array,array.length)" id="red">Radix Sort</button></li>
+
+            <a href="#" id="popup-link">Click me for Algorithm!</a>
+
+            <div class="popup-box" id="bub-popup">
+                <b>Bubble_Sort(List,N)</b><br>
+                Where, List = Array of N Elements<br>
+                    N = Size of array (Total No of Elements)<br>
+                Step: 1 [Initialization]<br>
+                i=0<br>
+                Step: 2 while (i<(N-1)) repeat thru Step 7<br>
+                Step: 3 j=0<br>
+                Step: 4 while (j<(N-i-1)) repeat thru Step 6<br>
+                Step: 5 if (List[j] > List [j+1])<br>
+                    (i) temp=List[j]<br>
+                    (ii) List[j]=List[j+1]<br>
+                    (iii) List[j+1]=temp<br>
+                Step: 6 j=j+1<br>
+                Step: 7 i=i+1<br>
+                Step: 8 [Finished]<br>
+                Exit.<br><br>
+                <a href="#" id="close-bubpopup"><b>Close</b></a>
+            </div>
+            <div class="popup-box" id="sel-popup">
+                <b>Selection_Sort(List,N)</b><br>
+                Where, List => Array of N Elements<br>
+                N => Size of array (Total No of Elements)<br>
+                Step: 1 [Initialization]<br>
+                    i=0<br>
+                Step: 2 while (i < (N-1)) repeat thru Step 7<br>
+                Step: 3 j=i+1<br>
+                Step: 4 while (j<(N)) repeat thru Step 6<br>
+                Step: 5 if (List[i] > List[j])<br>
+                    (i) temp=List[i]<br>
+                    (ii) List[i]=List[j]<br>
+                    (iii) List[j]=temp<br>
+                Step: 6 j=j+1<br>
+                Step: 7 i=i+1<br>
+                Step: 8 [Finished]<br>
+                Exit<br><br>
+                <a href="#" id="close-selpopup"><b>Close</b></a>
+            </div>
+            <div class="popup-box" id="ins-popup">
+                <b>Insertion Sort (a,N)</b><br>
+                Where, a => Array<br>
+                N => Total no of elements<br>
+                Step:1 Read N<br>
+                Step: 2 Repeat thru step 2 for i=0,1,2,…N-1 Read (a[i])<br>
+                Step: 3 Repeat thru Step 6 for i= 1,2,…N-1<br>
+                Step:4 index = a[i]<br>
+                j=i<br>
+                Step: 5 Repeat while (j>0 and a[j-1]>index)<br>
+                a[j] = a[j-1]<br>
+                j = j-1<br>
+                Step: 6 a[j] = Index<br>
+                Step :7 [Finished]<br>
+                Exit.<br><br>
+                <a href="#" id="close-inspopup"><b>Close</b></a>
+            </div>
+            <div class="popup-box" id="mer-popup">
+                <b>Merge Sort (List1, n, List2, m, List)</b><br> 
+                Where,List1 = First List of n elements<br>
+                List2 = Second List of m elements<br>
+                List = Merge elements are stored in this list<br>
+                Step: 1 [Initialization]<br>
+                    i=0<br>
+                    j=0<br>
+                    k=0<br>
+                Step: 2 while ((i<(n)) and (j<(m))) repeat thru step3<br>
+                Step 3: If (List1 [i] < List2 [j]) then<br>
+                    List[k] = List1 [i]<br>
+                    k = k+1<br>
+                    i = i+1<br>
+                    Else If (List1 [i] > List2 [j]) then<br>
+                    List[k] = List2 [j]<br>
+                    k = k+1<br>
+                    j = j+1<br>
+                    Else<br>
+                    List[k] = List1 [i]<br>
+                    k = k+1<br>
+                    i = i+1<br>
+                    j = j+1<br>
+                Step: 4 if (i<(n))<br>
+                    Repeat for x=i,i+1,…n-1<br>
+                    List[k] = List1[x]<br>
+                    k = k+1<br>
+                Step: 5 if (j < m)<br>
+                    Repeat for y=j,j+1,…m-1<br>
+                    List[k] = List2[y]<br>
+                    k = k+1<br>
+                Step: 6 [Finished]<br>
+                Exit.<br><br>
+                <a href="#" id="close-merpopup"><b>Close</b></a>
+            </div>
+            <div class="popup-box" id="red-popup">
+                <b>radixSort(arr)</b><br>
+                step: 1  max = largest element in the given array<br>
+                step: 2  d = number of digits in the largest element (or, max)<br>
+                step: 3  Now, create d buckets of size 0 - 9<br>  
+                        for i -> 0 to d<br>  
+                        sort the array elements using counting sort (or any stable sort) according to the 
+                        digits at the ith place<br>
+                Exit.<br><br>
+                <a href="#" id="close-redpopup"><b>Close</b></a>
+            </div>
+        </ul> 
+    </nav>
+
+    <div id="container"></div>
+
+    <div>
+        <button onClick="init()" id="init">Init</button>
+        <button onClick="unsort()" id="unsort">Unsort</button>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/BubbleSort.js"></script>
+    <script src="js/SelectionSort.js"></script>
+    <script src="js/MergeSort.js"></script>
+    <script src="js/InsertionSort.js"></script>
+    <script src="js/radixSort.js"></script>
+
+</body>
+</html>
