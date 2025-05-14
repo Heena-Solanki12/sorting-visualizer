@@ -52,7 +52,7 @@ This project aims to provide a hands-on and intuitive approach to understanding 
 ![Bubble Sort3](images/bubblesort_3.png)
 
 ### 🔹 Click the algorithm link and see the algorithm of bubble sort in popup box
-![Bubble Sort_Algo](images/bublesortAlgo.png)
+![Bubble Sort_Algo](images/bubblesortAlgo.png)
 
 ---
 
