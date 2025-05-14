@@ -68,4 +68,60 @@ This project aims to provide a hands-on and intuitive approach to understanding 
 
 ---
 
+## 📂 Project Structure
 
+sorting-visualizer/
+├── css/
+│ └── style.css
+├── images/
+│ └── [Your screenshot images]
+├── js/
+│ ├── bubbleSort.js
+│ ├── insertionSort.js
+│ ├── mergeSort.js
+│ ├── radixSort.js
+│ ├── selectionSort.js
+│ └── main.js
+├── index.html
+└── README.md
+
+---
+
+## 💡 How to Run the Project
+
+1. Download or clone the repository:
+   ```bash
+   git clone https://github.com/Heena-Solanki12/sorting-visualizer.git
+
+2. Navigate to the project folder.
+
+3. Open index.html in your preferred web browser.
+
+No additional setup is required. Works on all modern browsers.
+
+---
+
+## 🧪 Internship Context
+
+Internship Period: 27th July – 30th August 2023
+
+Institute: Government Polytechnic, Porbandar
+
+Intern: Heena B Solanki (Enrollment: 216270307009)
+
+Mentor: Mr. Kunal Thanki
+
+This project was developed as part of a diploma engineering internship under the Computer Engineering Department to gain real-world experience in JavaScript and frontend web development.
+
+---
+
+## 📚 References
+GeeksForGeeks – Sorting Algorithms
+
+YouTube – Code Drifter
+
+GitHub – Abhishek Prakash
+
+Radu Mariescu-Istodor – Visualizing Algorithms
+
+---
