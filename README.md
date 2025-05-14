@@ -38,7 +38,15 @@ This project aims to provide a hands-on and intuitive approach to understanding 
 
 ## 📷 Screenshots
 
-> Include images like these in the GitHub repo:
+### 🔹 Homepage with control panel and bars
+![Home Page](images/homepage.png)
+
+### 🔹 Bubble Sort Animation
+![Bubble Sort](images/bubblesort_1.png)
+
+
+## 📷 Screenshots
+
 - Homepage with control panel and bars
 - Bubble sort animation in progress
 - Popup displaying algorithm logic
