@@ -41,16 +41,18 @@ This project aims to provide a hands-on and intuitive approach to understanding 
 ### 🔹 Homepage with control panel and bars
 ![Home Page](images/homepage.png)
 
-### 🔹 Bubble Sort Animation
-![Bubble Sort](images/bubblesort_1.png)
+### 🔹 Set the bar size and initialize it
+![Set Bar](images/setbar.png)
 
+### 🔹 Set the speed of sorting and perform the bubble sort
+![Bubble Sort1](images/bubblesort_1.png)
+![Bubble Sort2](images/bubblesort_2.png)
 
-## 📷 Screenshots
+### 🔹 Final sorted result
+![Bubble Sort3](images/bubblesort_3.png)
 
-- Homepage with control panel and bars
-- Bubble sort animation in progress
-- Popup displaying algorithm logic
-- Final sorted result
+### 🔹 Click the algorithm link and see the algorithm of bubble sort in popup box
+![Bubble Sort_Algo](images/bublesortAlgo.png)
 
 ---
 
