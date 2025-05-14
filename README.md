@@ -68,25 +68,6 @@ This project aims to provide a hands-on and intuitive approach to understanding 
 
 ---
 
-## 📂 Project Structure
-
-sorting-visualizer/
-├── css/
-│ └── style.css
-├── images/
-│ └── [Your screenshot images]
-├── js/
-│ ├── bubbleSort.js
-│ ├── insertionSort.js
-│ ├── mergeSort.js
-│ ├── radixSort.js
-│ ├── selectionSort.js
-│ └── main.js
-├── index.html
-└── README.md
-
----
-
 ## 💡 How to Run the Project
 
 1. Download or clone the repository:
